@@ -1,1 +1,3 @@
-# genomic-pipeline-tcell-exhaustion
+# Genomic pipeline - tcell exhaustion
+This project implements a scalable data pipeline to analyze T-cell exhaustion in melanoma patients using single-cell RNA sequencing data (GSE120575). Leveraging Databricks and PySpark, the pipeline ingests and normalizes high-dimensional genomic matrices to handle biological noise and sparsity efficiently. 
+I am planning to use Scanpy for unsupervised clustering to isolate CD8+ T-cell populations from the tumor microenvironment. This analysis identifies specific exhaustion biomarkers (like PD-1 and TIM-3) to distinguish between responsive and non-responsive immune cells. This is a production grade approach to computational biology, bridging raw sequencing data with actionable insights for medication.
