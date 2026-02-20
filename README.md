@@ -49,3 +49,31 @@ Through marker gene analysis, I scientifically validated the clusters:
 * **Libraries:** Scanpy, Pandas, Numpy, Matplotlib, Leidenalg.
 * **Data Science:** PCA, UMAP, Unsupervised Clustering, Data Cleaning.
 * **Bioinformatics:** Single-cell RNA-seq processing, Gene expression normalization.
+
+
+## 🔬 Phase 2: Tumor Microenvironment & Integration (Synthetic Data Engineering)
+
+### 1. Synthetic Data Generation & Simulation
+To test the pipeline's integration capabilities without the computational overhead of massive raw cancer datasets, I engineered a synthetic "Cancer Patient" dataset:
+* **Simulated Technical Noise:** Injected Gaussian noise to replicate "Batch Effects" (technical variance between sequencing machines).
+* **Biological Simulation:** Randomly targeted a subset of CD4+ T-Cells and mathematically simulated an "Exhausted" state by synthetically upregulating classic inhibitory receptor genes (*PDCD1*, *LAG3*, *HAVCR2*, *CTLA4*).
+
+### 2. Batch Effect Correction (Integration)
+Merging data from different sources creates severe technical artifacts. To solve this, I implemented an advanced integration algorithm:
+* **Algorithm:** Applied **BBKNN** (Batch Balanced k-Nearest Neighbors) to recalculate the underlying neighborhood graph.
+* **Result:** Successfully forced the mathematical alignment of the "Healthy" and "Patient" datasets based on shared biology, completely stripping away the engineered machine noise.
+
+<img width="678" height="242" alt="image" src="https://github.com/user-attachments/assets/de13af14-2f55-4fc2-86e8-1767d5fcaa86" />
+
+*(Notice how the Healthy and Patient cells blend perfectly within their respective clusters after BBKNN integration).*
+
+### 3. Biological Scoring (T-Cell Exhaustion)
+To mathematically isolate the diseased cells, I developed a custom scoring matrix:
+* **Exhaustion Signature:** Scanned the integrated matrix against the 4 key inhibitory markers.
+* **Result:** The pipeline successfully identified and isolated the exact synthetic population of exhausted T-Cells, demonstrating high sensitivity to complex biological signatures.
+
+<img width="555" height="562" alt="image" src="https://github.com/user-attachments/assets/75064ef4-e968-4c9d-b99d-44d0cc3bb177" />
+
+*(The distinct upper distribution in the Patient violin precisely matches the engineered exhaustion signature, validating the pipeline's scoring logic).*
+
+---
