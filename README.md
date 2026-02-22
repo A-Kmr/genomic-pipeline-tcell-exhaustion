@@ -77,3 +77,19 @@ To mathematically isolate the diseased cells, I developed a custom scoring matri
 *(The distinct upper distribution in the Patient violin precisely matches the engineered exhaustion signature, validating the pipeline's scoring logic).*
 
 ---
+## 🌋 Phase 3: Differential Gene Expression & Marker Discovery
+
+### 1. Statistical Comparison (Normal vs. Exhausted)
+With the integrated dataset established, I performed a Wilcoxon Rank-Sum test to identify the statistically significant genes that define the "Exhausted" state. 
+
+### 2. Genetic Fingerprinting
+The pipeline identified a distinct "fingerprint" of exhaustion that extends beyond classic markers:
+* **Validated Markers:** High expression of *PDCD1* (PD-1) and *LAG3*.
+* **Novel Discoveries:** Identified *IL32*, *TMSB4X*, and *PFN1* as highly significant markers in the exhausted population, suggesting changes in cell signaling and structural stress.
+
+<img width="895" height="458" alt="image" src="https://github.com/user-attachments/assets/1e26b0c2-a7ab-4de1-9a9c-babe43839824" />
+
+*(The Dotplot highlights both the intensity of expression and the fraction of cells expressing these key markers, providing a high-fidelity view of the disease state).*
+
+### 📊 Conclusion
+This pipeline successfully demonstrates a full bio-informatic workflow: from raw data quality control and multi-batch integration to high-sensitivity disease signature discovery.
