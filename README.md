@@ -93,3 +93,13 @@ The pipeline identified a distinct "fingerprint" of exhaustion that extends beyo
 
 ### 📊 Conclusion
 This pipeline successfully demonstrates a full bio-informatic workflow: from raw data quality control and multi-batch integration to high-sensitivity disease signature discovery.
+
+## 🚀 Future Enhancements
+
+**Immediate (Short-Term):**
+- Validate the pipeline on real-world published cohorts (e.g., PBMC 10K or melanoma clinical trials).
+- Implement secondary batch correction methods like **Harmony** to compare integration performance.
+
+**Production & Scale (Long-Term):**
+- **Cloud Deployment:** Migrate the pipeline to **Databricks** with Delta Lake for enterprise-grade version control.
+- **Clinical Integration:** Map discovered markers against drug target databases (DrugBank, ChEMBL) to identify potential immunotherapy combinations.
